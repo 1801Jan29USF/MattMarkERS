@@ -1,0 +1,36 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">amount</th>
+      <th scope="col">submitted</th>
+      <th scope="col">author</th>
+      <th scope="col">type</th>
+      <th scope="col">description</th>
+      <th scope="col">status</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let r of rList">
+      <th scope="row">{{r?.id}}</th>
+      <td>{{r?.amount | currency:"USD":'symbol': '1.2'}}</td>
+      <td>{{r?.submitted | date:"EEEE, MMMM d, y, h:mm:ss"}}</td>
+      <td>{{r?.aName}}</td>
+      <td>{{r?.type | tableFormat:"type"}}</td>
+      <td>{{r?.description}}</td>
+      <td>{{r?.status | tableFormat:"status"}}</td>
+      <td>
+        <form>
+          <input type="button" value="approve" (click)="approve(r)">
+        </form>
+      </td>
+      <td>
+        <form>
+            <input type="button" value="deny" (click)="deny(r)">
+        </form>
+      </td>
+    </tr>
+  </tbody>
+</table>

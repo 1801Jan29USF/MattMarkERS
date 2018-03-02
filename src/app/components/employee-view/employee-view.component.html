@@ -1,0 +1,31 @@
+<form (ngSubmit)="rSubmit()">
+  <input type="text" name="amount" [(ngModel)]="reimbursement.amount" placeholder="Amount">
+  <input type="text" name="type" [(ngModel)]="typeInput" placeholder="Type">
+  <input type="text" name="Description" [(ngModel)]="reimbursement.description" placeholder="Description" size="40">  
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form> 
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">amount</th>
+      <th scope="col">submitted</th>
+      <th scope="col">resolved</th>
+      <th scope="col">resolver</th>
+      <th scope="col">type</th>
+      <th scope="col">status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let r of rList">
+      <th scope="row">{{r?.id}}</th>
+      <td>{{r?.amount | currency:"USD":'symbol': '1.2'}}</td>
+      <td>{{r?.submitted | date:"EEEE, MMMM d, y, h:mm:ss"}}</td>
+      <td>{{r?.resolved | date:"EEEE, MMMM d, y, h:mm:ss"}}</td>
+      <td>{{r?.aName}} {{r?.rName}}</td>
+      <td>{{r?.type  | tableFormat:"type"}}</td>
+      <td>{{r?.status | tableFormat:"status"}}</td>
+    </tr>
+  </tbody>
+</table>
