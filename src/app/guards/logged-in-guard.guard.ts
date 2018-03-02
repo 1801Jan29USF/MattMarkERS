@@ -11,8 +11,7 @@ export class LoggedInGuard implements CanActivate {
 
   canActivate(
     next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    console.log('checking cookie');
+    state: RouterStateSnapshot): boolean {
     if (SessionService.loggedIn) {
       return true;
     } else {

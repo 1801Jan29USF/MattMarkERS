@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Reimbursement } from '../../beans/reimbursement';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
+import { SessionService} from '../../services/session.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-employee-view',
@@ -14,9 +17,12 @@ export class EmployeeViewComponent implements OnInit {
   reimbursement: Reimbursement = new Reimbursement();
   rList: Array<Reimbursement> = [];
 
-  constructor(private client: HttpClient) { }
+  constructor(private client: HttpClient,  private router: Router) { }
 
   ngOnInit() {
+    if (!SessionService.manager && !SessionService.employee) {
+      this.router.navigateByUrl('/login');
+    }
     this.client.get(`${environment.context}employee`,
       { withCredentials: true })
       .subscribe(
@@ -45,6 +51,8 @@ export class EmployeeViewComponent implements OnInit {
         this.reimbursement.type = 4;
         break;
     }
+    this.reimbursement.status = 1;
+    this.rList.unshift(this.reimbursement);
     this.client.post(`${environment.context}employee`, this.reimbursement,
       { withCredentials: true })
       .subscribe(

@@ -26,10 +26,11 @@ export class LoginComponent implements OnInit {
     {withCredentials: true})
       .subscribe(
         (succ: any) => {
-          SessionService.loggedIn = true;
           if (succ.role === 1) {
+            SessionService.employee = true;
             this.router.navigateByUrl('/employee');
           }else if (succ.role === 2) {
+            SessionService.manager = true;
             this.router.navigateByUrl('/manager');
           }
         },

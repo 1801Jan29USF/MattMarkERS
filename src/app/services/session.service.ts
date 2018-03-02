@@ -3,9 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class SessionService {
 
-    static loggedIn:  boolean;
+    static employee:  boolean;
+    static manager:  boolean;
 
     constructor() {
-      SessionService.loggedIn = false;
+      SessionService.employee = false;
+      SessionService.manager = false;
     }
 }
