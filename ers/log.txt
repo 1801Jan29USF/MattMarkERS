@@ -1,0 +1,48 @@
+2018-02-26 15:58:11 TRACE JdbcDao:26 - connection established
+2018-02-26 15:58:12 WARN  JdbcDao:41 - failed
+2018-02-26 15:58:12 TRACE JdbcDao:26 - connection established
+2018-02-26 15:58:12 WARN  JdbcDao:41 - failed
+2018-02-26 15:58:13 TRACE JdbcDao:26 - connection established
+2018-02-26 15:58:13 WARN  JdbcDao:41 - failed
+2018-02-26 15:58:13 TRACE JdbcDao:26 - connection established
+2018-02-26 15:58:14 WARN  JdbcDao:41 - failed
+2018-02-27 09:32:42 TRACE JdbcDao:26 - connection established
+2018-02-27 09:32:44 DEBUG JdbcDao:37 - 1 rows inserted
+2018-02-27 09:32:45 TRACE JdbcDao:26 - connection established
+2018-02-27 09:32:45 DEBUG JdbcDao:37 - 1 rows inserted
+2018-02-27 09:32:46 TRACE JdbcDao:26 - connection established
+2018-02-27 09:32:46 DEBUG JdbcDao:37 - 1 rows inserted
+2018-02-27 09:32:46 TRACE JdbcDao:26 - connection established
+2018-02-27 09:32:46 DEBUG JdbcDao:37 - 1 rows inserted
+2018-02-27 11:01:28 TRACE JdbcDao:26 - connection established
+2018-02-27 11:01:28 DEBUG JdbcDao:37 - 1 rows inserted
+2018-03-01 11:42:03 TRACE JdbcDao:33 - connection established
+2018-03-01 11:42:04 DEBUG JdbcDao:44 - 1 rows inserted
+2018-03-01 11:42:05 TRACE JdbcDao:33 - connection established
+2018-03-01 11:42:05 DEBUG JdbcDao:44 - 1 rows inserted
+2018-03-01 11:42:05 TRACE JdbcDao:33 - connection established
+2018-03-01 11:42:05 DEBUG JdbcDao:44 - 1 rows inserted
+2018-03-01 11:42:06 TRACE JdbcDao:33 - connection established
+2018-03-01 11:42:06 DEBUG JdbcDao:44 - 1 rows inserted
+2018-03-01 11:42:06 TRACE JdbcDao:33 - connection established
+2018-03-01 11:42:06 DEBUG JdbcDao:44 - 1 rows inserted
+2018-03-01 11:47:57 TRACE JdbcDao:33 - connection established
+2018-03-01 11:47:57 WARN  JdbcDao:48 - failed
+2018-03-01 11:47:58 TRACE JdbcDao:33 - connection established
+2018-03-01 11:47:58 WARN  JdbcDao:48 - failed
+2018-03-01 11:47:58 TRACE JdbcDao:33 - connection established
+2018-03-01 11:47:58 WARN  JdbcDao:48 - failed
+2018-03-01 11:47:59 TRACE JdbcDao:33 - connection established
+2018-03-01 11:47:59 WARN  JdbcDao:48 - failed
+2018-03-01 11:47:59 TRACE JdbcDao:33 - connection established
+2018-03-01 11:47:59 WARN  JdbcDao:48 - failed
+2018-03-01 11:48:59 TRACE JdbcDao:33 - connection established
+2018-03-01 11:48:59 DEBUG JdbcDao:45 - 1 rows inserted
+2018-03-01 11:49:00 TRACE JdbcDao:33 - connection established
+2018-03-01 11:49:00 DEBUG JdbcDao:45 - 1 rows inserted
+2018-03-01 11:49:01 TRACE JdbcDao:33 - connection established
+2018-03-01 11:49:01 DEBUG JdbcDao:45 - 1 rows inserted
+2018-03-01 11:49:01 TRACE JdbcDao:33 - connection established
+2018-03-01 11:49:01 DEBUG JdbcDao:45 - 1 rows inserted
+2018-03-01 11:49:02 TRACE JdbcDao:33 - connection established
+2018-03-01 11:49:02 DEBUG JdbcDao:45 - 1 rows inserted
